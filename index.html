@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoriza</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/peso.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ingrese su peso en kg:</h1>
+        <!-- Aquí cambiamos el evento para que el formulario se envíe al presionar Enter -->
+        <form id="formulario" onsubmit="return Autorizar(event)">
+            <input id="num" type="number" placeholder="Ingrese un número">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="respuesta"></p>
+        <img id="imgResultado" src="" style="display:none;">
+        <audio id="cancion" src="" preload="auto"></audio>
+    </div>
+</body>
+</html>
